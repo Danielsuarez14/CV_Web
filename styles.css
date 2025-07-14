@@ -1,0 +1,281 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-color: rgba(19, 16, 37, 0.14);
+}
+
+.cv {
+    display: grid;
+    height: 1650px;
+    width: 910px;
+    grid-template-columns: 300px 600px;
+    justify-self: center;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #fff;
+}
+/* Left Side */
+.left-div {
+    display: grid;
+    grid-column: 1;
+    grid-template-rows: 165px 120px 180px 400px;
+    background-color: #e8b50e;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    color: #000;
+}
+.top {
+    border-top-left-radius: 10px;
+    grid-row: 1;
+    background-color: #131025;
+    height: 165px;
+}
+.name {
+    font-size: 28px;
+}
+.photo {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-top: 100px solid rgb(19, 16, 37);
+    border-left: 150px solid transparent;
+    border-right:150px solid transparent;
+    
+}
+
+/* Contacts */
+.contacts{
+    grid-row: 3;
+    display: grid;
+    grid-template-rows: 50px repeat(2, 50px);
+    margin-left: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.icon{
+    display: grid;
+    background-color: #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.icon img{
+    width: 25px;
+    height: 25px;
+
+    animation: icons_contacts auto linear ;
+    animation-timeline: scroll(root block);
+
+}
+.email{
+    text-decoration-line: underline;
+}
+
+/* Studies */
+.studies{
+    display: grid;
+    grid-template-rows: 60px repeat(2, 150px);
+    margin-left: 30px;
+    height: 600px;
+}
+.block{
+    display: grid;
+    grid-template-columns: 50px 200px;
+    grid-template-rows: 50px 100px;
+}
+.circle{
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    grid-column: 1;
+    border-radius: 50%;
+    align-self: center;
+    justify-self: center;
+}
+#circle_one{
+    animation: circle auto linear;
+    animation-timeline: scroll(root block);
+    animation-range: 0 400px;
+}
+#circle_two{
+    animation: circle auto linear;
+    animation-timeline: scroll(root block);
+    animation-range: 0 600px;
+}
+.degree{
+    grid-column: 2;
+}
+.study{
+    grid-column: 2;
+}
+.line{
+    background-color: #000;
+    width: 3px;
+    height: 145px;
+    grid-column: 1;
+    border-radius: 10px;
+    align-self: center;
+    justify-self: center;
+}
+#line_one{
+    animation: line auto linear;
+    animation-timeline: scroll(root block);
+    animation-range: 0 500px;
+}
+#line_two{
+    animation: line auto linear;
+    animation-timeline: scroll(root block);
+    animation-range: 0 700px;
+}
+
+/* Skills */
+
+.skills{
+    display: grid;
+    grid-template-rows: 70px repeat(6, 70px);
+    margin-left: 30px;
+}
+
+.language{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+.language img{
+    width: 40px;
+    height: 40px;
+}
+
+/* Right Side */
+
+.right-div {
+    display: grid;
+    grid-column: 2;
+    grid-template-rows: 280px 270px 300px;
+    border-top-right-radius: 10px;
+}
+.title {
+    border-top-right-radius: 10px;
+    grid-row: 1;
+    background-color: rgb(28, 24, 46);
+    height: 165px;
+    padding-left: 50px;
+}
+.summary{
+    color: #000;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.summary_line{
+    background-color: #000;
+    width: 550px;
+    height: 3px;
+}
+
+.courses{
+    color: #000;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+/* Table */
+.table{
+    display: flex;
+    height: 1000px;
+}
+
+.table tr{
+    height: 45px;
+}
+
+.udemy{
+    margin-left: 45px;
+    width: 60px;
+    height: 25px;
+}
+
+.platzi{
+    margin-left: 35px;
+    width: 65px;
+    height: 20px;
+}
+
+.sena{
+    margin-left: 45px;
+    width: 50px;
+    height: 50px;
+}
+
+.color_udemy{
+    background-color: rgba(165, 53, 240, 0.145);
+}
+
+.table tr:last-child td:last-child{
+    border-bottom-right-radius: 10px;
+}
+.table tr:last-child td:first-child{
+    border-bottom-left-radius: 10px;
+}
+.table tr:nth-child(2) td:first-child{
+    border-top-left-radius: 10px;
+}
+.table tr:nth-child(2) td:last-child{
+    border-top-right-radius: 10px;
+}
+
+.color_platzi{
+    background-color: rgb(152, 202, 63, 0.145);
+}
+
+.color_sena{
+    background-color: rgb(242, 150, 27, 0.145);
+}
+
+
+/* animations */
+
+@keyframes circle{
+    to{
+        width: 20px;
+        height: 20px;
+        background-color: #000f94;
+    }
+}
+
+@keyframes line{
+    to{
+        width: 3.5px;
+        height: 145px;
+        background-color: #000f94;
+    }
+}
+
+@keyframes icons_contacts{
+    50%{
+        transform: rotate(45deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
